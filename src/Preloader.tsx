@@ -48,9 +48,9 @@ const Preloader: React.FC<PreloaderProps> = ({
 };
 
 Preloader.defaultProps = {
-  size: 100,
+  size: 300,
   label: "LOADING ....",
   variant: "circle",
-  color: ["#eee", "#00000"]
+  color: ["#eee", "#eee"]
 };
 export default Preloader;
