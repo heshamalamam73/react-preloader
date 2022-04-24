@@ -1,0 +1,101 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+.box {
+  position: relative;
+  border: 15px solid #eee;
+  /* border-top-color: #737373; */
+  box-sizing: border-box;
+  animation: boxAnimation 10s linear infinite;
+}
+.boxAbsloute {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  border: 15px solid #eee;
+  /* border-top-color: #737373; */
+  box-sizing: border-box;
+  animation: boxAnimationAbsloute 0.9s linear infinite;
+}
+.label {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 2em;
+  animation: label 2s linear infinite;
+}
+
+.circle {
+  position: relative;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: #737373;
+  box-sizing: border-box;
+  animation: circleAnimation 2s linear infinite;
+}
+
+.circleAbsloute {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: #737373;
+  box-sizing: border-box;
+  animation: circleAnimationAbsloute 10s linear infinite;
+}
+@keyframes circleAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes circleAnimationAbsloute {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes boxAnimation {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes boxAnimationAbsloute {
+  0% {
+    transform: rotate(360deg);
+    opacity: 0.8;
+    transform: scale(0);
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes label {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
